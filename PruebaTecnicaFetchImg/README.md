@@ -16,7 +16,7 @@ para configurar yo desde cero. Asi creamos el punto de entrada de toda app React
 
 Paso 1: comando npm create vite@latest
 
-Paso 2: Instalar el plugin de Vite (igual hay que configurarlo): npm install @vitejs/plugin-react -E (flag -E para la tener la version exacta
+Paso 2: Instalar el plugin de Vite (igual hay que configurarlo): npm install @vitejs/plugin-react -E (flag -E para la tener la version exacta. Asi no se instala por ejeplo "^7.1.7" y se evitan actulizaciones inesperadas)
 
 Paso 3: Instalar las dependencias necesarias de react
     A- react (la biblioteca en si)
@@ -24,7 +24,7 @@ Paso 3: Instalar las dependencias necesarias de react
     comando npm install react react-dom -E
 
 Paso 4: Configurar Vite
-    Crear el archivo vite.config.js en la rai del proyecto.
+    Crear el archivo vite.config.js en la raiz del proyecto.
     Crear las 5 lineas necesarias y ya
     1- importar el defineConfig desde vite
     2- importar react desde la libreria de Vite que instalamos (@vitejs/plagin-react)
@@ -36,12 +36,14 @@ Paso 5: Crear el punto de entrada de toda aplicacion react, el main.jsx
     3- Creo el objeto root a partir de ese creatRoot que importe
     4- Con el document.getElementById("app") obtengo el elemento html del index.html donde voy a "inyectar" el codigo de react
     5- Accedo a la funcion reder del objeto root.
-    6- Cmabio la extencion del main.js a jsx para que el plugin de vite lo pueda traspilar sin problemas
-    7- Actuli la referencia al main en el index.html con la nueva extencion. Osea, main.jsx
+    6- Cambio la extencion del main.js a jsx para que el plugin de vite lo pueda traspilar sin problemas
+    7- Actualizo la referencia al main en el index.html con la nueva extencion. Osea, main.jsx
 
-Paso 6: Muy importante instalar el plugin/libreria ESLint (slinter), en este caso instalamos standart con npm install standart -D 
-    y configurar en el package.json la key eslintConfig para que lo encuentre.
+Paso 6: Muy importante instalar el plugin/libreria ESLint (slinter), en este caso instalamos standard con npm install standard -D 
+    y configurar en el package.json la key eslintConfig para que lo encuentre, con "extends": "node_modules/standard/eslintrc.json"
 
-Paso 7: Hasta el punto 6 tenemos ya un proyecto react configurado desde cero con su archivo main.jsx como punto de entrada. Pero en este punto
+Paso 7: Instalamos la libreria axios con npm install axios -E y la importamos con import axios from 'axios'
+
+Paso 8: Hasta el punto 7 tenemos ya un proyecto react configurado desde cero con su archivo main.jsx como punto de entrada. Pero en este punto
     tenemos que crear el App.jsx e importarlo dentro de main.jsx para empezar con los puntos que piede la prueba. 
 
