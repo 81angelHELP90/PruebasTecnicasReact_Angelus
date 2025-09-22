@@ -45,5 +45,3 @@ Paso 6: Muy importante instalar el plugin/libreria ESLint (slinter), en este cas
 Paso 7: Hasta el punto 6 tenemos ya un proyecto react configurado desde cero con su archivo main.jsx como punto de entrada. Pero en este punto
     tenemos que crear el App.jsx e importarlo dentro de main.jsx para empezar con los puntos que piede la prueba. 
 
-Lo vi todo https://www.youtube.com/watch?v=XYpadB4VadY pero hay que volver a verlo para anotar los detalles del fetch y tal
-
